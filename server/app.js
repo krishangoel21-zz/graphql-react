@@ -14,7 +14,8 @@ const cors = require('cors');
 
 app.use(cors());
 
-mongoose.connect('mongodb+srv://krishangoel:qzfm5tRlIh9ekqcZ@cluster0.8zzuj.mongodb.net/graphql?retryWrites=true&w=majority',{ useNewUrlParser: true , useUnifiedTopology: true});
+
+mongoose.connect("YOUR_MONGODB_URI")
 
 mongoose.connection.once('open',()=>{
 console.log('connected to database')	
